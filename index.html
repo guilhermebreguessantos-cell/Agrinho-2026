@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Sustentável</title>
+    <style>
+        :root {
+            --primary-color: #2c6b4e;
+            --secondary-color: #4caf50;
+            --accent-color: #8bc34a;
+            --dark-color: #2e3d30;
+            --light-color: #f4f7f5;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(44, 107, 78, 0.9), rgba(44, 107, 78, 0.9)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: var(--white);
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 10px;
+        }
+
+        /* Estilização das Tabelas */
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 12px 15px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fbf9;
+        }
+
+        tr:hover {
+            background-color: #f1f5f2;
+        }
+
+        /* Status Badges */
+        .badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .badge-andamento { background-color: #ffe0b2; color: #fb8c00; }
+        .badge-planejado { background-color: #e1f5fe; color: #0288d1; }
+        .badge-iniciado { background-color: #e8f5e9; color: #43a047; }
+        .badge-concluido { background-color: #c8e6c9; color: #2e7d32; }
+
+        /* Cards de Destaques */
+        .destaques-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #f9fbf9;
+            border: 1px solid #e0e8e3;
+            border-radius: 6px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .card em {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agrinho 2026</h1>
+        <p>“Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente”</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Planejamento e Monitoramento: Agro Sustentável</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Indicador de Sustentabilidade</th>
+                            <th>Ação Prática</th>
+                            <th>Meta (Exemplo)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Solo</strong></td>
+                            <td>Saúde do Solo</td>
+                            <td>Rotação de culturas e plantio direto</td>
+                            <td>Aumentar matéria orgânica em 2%</td>
+                            <td><span class="badge badge-andamento">Em andamento</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Água</strong></td>
+                            <td>Eficiência Hídrica</td>
+                            <td>Implementação de irrigação por gotejamento</td>
+                            <td>Reduzir consumo em 15%</td>
+                            <td><span class="badge badge-planejado">Planejado</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Biodiversidade</strong></td>
+                            <td>Áreas de Preservação</td>
+                            <td>Recuperação de APPs e Reserva Legal</td>
+                            <td>Plantar 500 mudas nativas</td>
+                            <td><span class="badge badge-iniciado">Iniciado</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Energia</strong></td>
+                            <td>Matriz Energetica</td>
+                            <td>Instalação de painéis solares</td>
+                            <td>50% da energia renovável</td>
+                            <td><span class="badge badge-concluido">Concluído</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Produção</strong></td>
+                            <td>Uso de Insumos</td>
+                            <td>Integração Lavoura-Pecuária-Floresta</td>
+                            <td>Reduzir químicos em 20%</td>
+                            <td><span class="badge badge-andamento">Em andamento</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Social</strong></td>
+                            <td>Capacitação</td>
+                            <td>Treinamento da equipe em boas práticas</td>
+                            <td>100% da equipe treinada</td>
+                            <td><span class="badge badge-planejado">Planejado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Destaques Principais para este Ano 2026</h2>
+            <div class="destaques-grid">
+                <div class="card">
+                    <h3>Goiás (SENAR-GO)</h3>
+                    <em>Tema: "Sementes do Bem: Cultivando saúde para mente, corpo e comunidade"</em>
+                    <p>Uma novidade importante para esta 17ª edição: a <strong>Categoria Valores</strong>, focada na Educação Infantil, para trabalhar temas como amor, paz, verdade, ação correta e não violência.</p>
+                </div>
+                <div class="card">
+                    <h3>Espírito Santo (SENAR-ES) e outros estados</h3>
+                    <em>Tema: "Campo e Cidade: Conexões que transformam"</em>
+                    <p>O foco aqui é mostrar como o meio rural e o urbano dependem um do outro e como essa integração pode ser mais sustentável e tecnológica.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Documentação de 2026</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo de Documento</th>
+                            <th>O que incluir?</th>
+                            <th>Por que é importante?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Termo de Adesão</strong></td>
+                            <td>Formulário oficial preenchido pela escola/instituição.</td>
+                            <td>Formaliza a participação da escola no programa.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Documento do Aluno</strong></td>
+                            <td>Cópia de RCN, RG ou CIN (conforme edital regional).</td>
+                            <td>Identificação obrigatória para o concurso/premiação.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Termo de Uso de Imagem</strong></td>
+                            <td>Autorização assinada pelos pais ou responsáveis legais.</td>
+                            <td>Essencial se o seu projeto envolver fotos ou vídeos dos alunos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Projeto/Portfólio</strong></td>
+                            <td>Documento descritivo (template oficial do SENAR do seu estado).</td>
+                            <td>É o "coração" do seu trabalho; onde você explica a metodologia.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Comprovante de Inscrição</strong></td>
+                            <td>Protocolo gerado após o envio no sistema.</td>
+                            <td>Serve como prova de que você cumpriu o prazo.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Programa Agrinho. Agro forte, futuro sustentável.</p>
+    </footer>
+
+</body>
+</html>
